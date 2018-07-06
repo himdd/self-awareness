@@ -21,7 +21,7 @@ class xiaoHong {
         if( in_array($this->lastAnswer,$arr)){
             print($this->name."说，这里有我的答案，我的答案是：".$this->lastAnswer."\n");
         }else{
-            print($this->name."说，这里没有我的答案\n");
+            print($this->name."说，这里没有我的答案，我的答案是：".$this->lastAnswer."\n");
         }
     }
 }
@@ -41,7 +41,7 @@ class xiaoMing {
         if( in_array($this->lastAnswer,$arr)){
             print($this->name."说，这里有我的答案，我的答案是：".$this->lastAnswer."\n");
         }else{
-            print($this->name."说，这里没有我的答案\n");
+            print($this->name."说，这里没有我的答案，我的答案是：".$this->lastAnswer."\n");
         }
     }
 }
@@ -66,7 +66,7 @@ class Mock{
             $hongAnswer,
             $mingAnswer
         ];
-        print("询问".implode(",",$arrAnswer)."中是否有他们的答案。\n");
+        print("询问".implode(",",$arrAnswer)."中是否有他们的答案:\n");
         $xiaoHong->is_exist_mine($arrAnswer);
         $xiaoMing->is_exist_mine($arrAnswer);
         print("\n\n");
@@ -76,7 +76,7 @@ class Mock{
           1,
           2,
         ];
-        print("询问".implode(",",$ArrNoAnswer)."中是否有他们的答案。\n");
+        print("询问".implode(",",$ArrNoAnswer)."中是否有他们的答案:\n");
         $xiaoHong->is_exist_mine($ArrNoAnswer);
         $xiaoMing->is_exist_mine($ArrNoAnswer);
 
